@@ -1,4 +1,5 @@
 import 'dart:typed_data';
+
 import 'package:tagyourtaxi_driver/pages/onTripPage/booking_confirmation.dart';
 import 'package:tagyourtaxi_driver/pages/onTripPage/drop_loc_select.dart';
 import 'package:tagyourtaxi_driver/pages/login/login.dart';
@@ -74,7 +75,7 @@ class _MapsState extends State<Maps> with WidgetsBindingObserver {
 
   @override
   void initState() {
-    WidgetsBinding.instance!.addObserver(this);
+    WidgetsBinding.instance.addObserver(this);
 
     getLocs();
     super.initState();

@@ -44,7 +44,7 @@ class _DropLocationState extends State<DropLocation>
 
   @override
   void initState() {
-    WidgetsBinding.instance!.addObserver(this);
+    WidgetsBinding.instance.addObserver(this);
     getLocs();
     super.initState();
   }

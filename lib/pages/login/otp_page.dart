@@ -11,7 +11,6 @@ import 'package:tagyourtaxi_driver/widgets/widgets.dart';
 import '../../styles/styles.dart';
 import '../../functions/functions.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../widgets/widgets.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'dart:async';
 

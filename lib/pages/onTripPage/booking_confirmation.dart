@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
-import 'dart:typed_data';
 import 'dart:math';
+import 'dart:typed_data';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +21,6 @@ import 'package:location/location.dart';
 import 'package:tagyourtaxi_driver/translations/translation.dart';
 import 'package:tagyourtaxi_driver/widgets/widgets.dart';
 import 'dart:ui' as ui;
-import '../../functions/functions.dart';
 import 'package:intl/intl.dart';
 
 // ignore: must_be_immutable
@@ -81,7 +80,7 @@ class _BookingConfirmationState extends State<BookingConfirmation>
   dynamic _showInfoInt;
   @override
   void initState() {
-    WidgetsBinding.instance!.addObserver(this);
+    WidgetsBinding.instance.addObserver(this);
     promoCode = '';
     promoStatus = null;
     serviceNotAvailable = false;
@@ -362,7 +361,7 @@ class _BookingConfirmationState extends State<BookingConfirmation>
                     myMarker.clear();
                     polyline.clear();
                     addressList.removeWhere((element) => element.id == 'drop');
-                    WidgetsBinding.instance?.addPostFrameCallback((_) {
+                    WidgetsBinding.instance.addPostFrameCallback((_) {
                       Navigator.pushAndRemoveUntil(
                           context,
                           MaterialPageRoute(builder: (context) => const Maps()),
@@ -370,7 +369,7 @@ class _BookingConfirmationState extends State<BookingConfirmation>
                     });
                   }
                   if (userRequestData['is_completed'] == 1) {
-                    WidgetsBinding.instance?.addPostFrameCallback((_) {
+                    WidgetsBinding.instance.addPostFrameCallback((_) {
                       Navigator.pushAndRemoveUntil(
                           context,
                           MaterialPageRoute(

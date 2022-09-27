@@ -206,11 +206,11 @@ getCountryCode() async {
       phcode = (countries
               .where((element) =>
                   element['code'] ==
-                  WidgetsBinding.instance!.window.locale.countryCode)
+                  WidgetsBinding.instance.window.locale.countryCode)
               .isNotEmpty)
           ? countries.indexWhere((element) =>
               element['code'] ==
-              WidgetsBinding.instance!.window.locale.countryCode)
+              WidgetsBinding.instance.window.locale.countryCode)
           : 0;
       result = 'success';
     } else {
@@ -1684,8 +1684,8 @@ cancelRequestWithReason(reason) async {
 
 makingPhoneCall(phnumber) async {
   var mobileCall = 'tel:' + phnumber;
-  if (await canLaunch(mobileCall)) {
-    await launch(mobileCall);
+  if (await canLaunchUrl(mobileCall as Uri)) {
+    await launchUrl(mobileCall as Uri);
   } else {
     throw 'Could not launch $mobileCall';
   }
@@ -2001,8 +2001,8 @@ deleteSos(id) async {
 //open url in browser
 
 openBrowser(browseUrl) async {
-  if (await canLaunch(browseUrl)) {
-    await launch(browseUrl);
+  if (await canLaunchUrl(browseUrl)) {
+    await launchUrl(browseUrl);
   } else {
     throw 'Could not launch $browseUrl';
   }

@@ -36,7 +36,7 @@ class _ChatPageState extends State<ChatPage> {
           body: ValueListenableBuilder(
               valueListenable: valueNotifierBook.value,
               builder: (context, value, child) {
-                WidgetsBinding.instance?.addPostFrameCallback((_) {
+                WidgetsBinding.instance.addPostFrameCallback((_) {
                   controller.animateTo(controller.position.maxScrollExtent,
                       duration: const Duration(milliseconds: 500),
                       curve: Curves.ease);

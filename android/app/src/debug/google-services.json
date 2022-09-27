@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "906673220115",
+    "project_id": "tytuser-37270",
+    "storage_bucket": "tytuser-37270.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906673220115:android:1281f80095bd4b2669ede6",
+        "android_client_info": {
+          "package_name": "com.example.tytuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906673220115-n3i4vu7tu992s9m8llj9n05jq9b16q91.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWV01Ps27V_x1_uoV6rcV0pUNtHvfUtWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906673220115-n3i4vu7tu992s9m8llj9n05jq9b16q91.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
